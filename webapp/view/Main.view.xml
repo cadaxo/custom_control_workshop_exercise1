@@ -1,0 +1,20 @@
+<mvc:View controllerName="project1.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:custom="project1.control">
+
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <custom:CustomTextControl press="onPress">
+             <!-- Add child controls to the aggregation 'items' -->
+                <custom:items>
+                    <Text text="Text 1" />
+                    <Text text="Text 2" />
+                    <Text text="Text 3" />
+                </custom:items>
+            </custom:CustomTextControl>
+        </content>
+    </Page>
+
+
+</mvc:View>
